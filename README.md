@@ -31,9 +31,12 @@ Please go ahead and clone this repository
 docker build . -t viralparekh/elasticsearch:6.8
 ```
 
-# Running the image
+# 6. Running the image
 You can use Docker for Desktop GUI to run the image or User below command to run it from Terminal
 
 ```
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" elyalvarado/elasticsearch:6.8
 ```
+
+# You are all set!
+Reach out to viral.parekh@cialfo.com.sg / stephan@cialfo.com.sg for any issues
