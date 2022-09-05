@@ -28,7 +28,7 @@ Please go ahead and clone this repository
 
 # 5. Building the image
 ```
-docker build . -t elyalvarado/elasticsearch:6.8
+docker build . -t viralparekh/elasticsearch:6.8
 ```
 
 # Running the image
