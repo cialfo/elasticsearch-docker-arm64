@@ -16,6 +16,9 @@ It's important to install git-lfs as the image of ES-6 is not a binary file.
 
 # 3. Clone
 Please go ahead and clone this repository
+```
+	git clone git@github.com:cialfo/elasticsearch-docker-arm64.git
+```
 
 # 4. Download the Complete ES 6 Snapshot
 ```
