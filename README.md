@@ -28,14 +28,14 @@ Please go ahead and clone this repository
 
 # 5. Building the image
 ```
-docker build . -t elyalvarado/elasticsearch:6.8
+docker build . -t elasticsearch:6.8
 ```
 
 # 6. Running the image
 You can use Docker for Desktop GUI to run the image or User below command to run it from Terminal
 
 ```
-docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" elyalvarado/elasticsearch:6.8
+docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" elasticsearch:6.8
 ```
 
 # You are all set!
