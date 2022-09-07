@@ -9,7 +9,8 @@
 # Extract Elasticsearch artifact
 ################################################################################
 
-FROM centos:8 AS builder
+# FROM centos:8 AS builder
+FROM registry.access.redhat.com/ubi8/ubi:latest AS builder
 
 # `tini` is a tiny but valid init for containers. This is used to cleanly
 # control how ES and any child processes are shut down.
@@ -52,9 +53,14 @@ COPY config/elasticsearch.yml config/log4j2.properties config/
 # Add entrypoint
 ################################################################################
 
-FROM centos:8
+# FROM centos:8
+FROM registry.access.redhat.com/ubi8/ubi
 
 ENV JAVA_HOME /usr/share/elasticsearch/jdk
+
+# RUN cd /etc/yum.repos.d/
+# RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+# RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 
 RUN for iter in {1..10}; do \
       yum update --setopt=tsflags=nodocs -y && \
