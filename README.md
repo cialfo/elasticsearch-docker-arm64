@@ -7,19 +7,19 @@ Built by backporting the 7.12 ARM64 Dockerfile and copying the JDK from the 7.12
 # 1. Git LFS
 It's important to install git-lfs as the image of ES-6 is not a binary file.
 ```
-	git lfs install --skip-smudge
+git lfs install --skip-smudge
 ```
 
 # 2. Clone
 Please go ahead and clone this repository
 ```
-	git clone git@github.com:cialfo/elasticsearch-docker-arm64.git
+git clone git@github.com:cialfo/elasticsearch-docker-arm64.git
 ```
 
 # 3. Download the Complete ES 6 Snapshot
 ```
-  cd elasticsearch-docker-arm64
-  git lfs pull --include="elasticsearch-6.8.16-SNAPSHOT-linux-aarch64.tar.gz"
+cd elasticsearch-docker-arm64
+git lfs pull --include="elasticsearch-6.8.16-SNAPSHOT-linux-aarch64.tar.gz"
 ```
 
 # 4. Building the image
