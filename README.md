@@ -8,7 +8,6 @@ Built by backporting the 7.12 ARM64 Dockerfile and copying the JDK from the 7.12
 It's important to install git-lfs as the image of ES-6 is not a binary file.
 ```
 	git lfs install --skip-smudge
-
 ```
 
 # 2. Clone
