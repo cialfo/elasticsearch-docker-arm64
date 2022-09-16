@@ -39,5 +39,16 @@ Use below command to run it from Terminal
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" cialfo/elasticsearch:6.8
 ```
 
+# 6. Login To Docker
+Use Credentials mentioned in 1Password
+```
+docker login
+```
+
+# 7. To Push Changes, Use this command
+```
+docker push cialfo/elasticsearch:6.8
+```
+
 # You are all set!
 Reach out to viral.parekh@cialfo.com.sg / stephan@cialfo.com.sg for any issues
