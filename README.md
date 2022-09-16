@@ -2,7 +2,7 @@
 
 Built by backporting the 7.12 ARM64 Dockerfile and copying the JDK from the 7.12 ElasticSearch docker distribution for ARM 64 to the 6.8 ElasticSearch distribution in this repo (elasticsearch-6.8.16-SNAPSHOT-linux-aarch64.tar.gz)
 
-# To Directly Run this Use this command
+# To Directly Run, Use this command
 ```
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" cialfo/elasticsearch:6.8
 ```
