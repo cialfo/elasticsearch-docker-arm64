@@ -3,11 +3,11 @@
 Built by backporting the 7.12 ARM64 Dockerfile and copying the JDK from the 7.12 ElasticSearch docker distribution for ARM 64 to the 6.8 ElasticSearch distribution in this repo (elasticsearch-6.8.16-SNAPSHOT-linux-aarch64.tar.gz)
 
 # To Directly Run,
-Use this command for Mac M1 :
+Use this command for <b>Mac M1</b> :
 ```
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" cialfo/elasticsearch:6.8
 ```
-Use this command for AMD64 (https://www.docker.elastic.co/r/elasticsearch/elasticsearch:6.8.0)
+Use this command for <b>AMD64</b> (https://www.docker.elastic.co/r/elasticsearch/elasticsearch:6.8.0)
 ```
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:6.8.0
 ```
