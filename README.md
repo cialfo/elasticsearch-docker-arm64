@@ -5,11 +5,11 @@ Built by backporting the 7.12 ARM64 Dockerfile and copying the JDK from the 7.12
 # To Directly Run,
 Use this command for <b>Mac M1</b> :
 ```
-docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" cialfo/elasticsearch:6.8
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" cialfo/elasticsearch:6.8
 ```
 Use this command for <b>AMD64</b> (https://www.docker.elastic.co/r/elasticsearch/elasticsearch:6.8.0)
 ```
-docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:6.8.0
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node"  -e "xpack.ml.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:6.8.0
 ```
 
 
